@@ -1,24 +1,5 @@
 # AutoIT-Script-to-Approve-Repeating-Segments
-# This is a simple AutoIT script that automatically approves repeating segments in SmartCat, Phrase and CAT tools of similar nature.
-# Toggle On/Off: "*" key.
 
-Global $toggle = False
+This is a simple AutoIT script that automatically approves repeating segments in SmartCat, Phrase and CAT tools of similar nature.
 
-HotKeySet("*", "ToggleScript")
-
-Func ToggleScript()
-    $toggle = Not $toggle
-    While $toggle
-        Send("^{ENTER}")    ; Sends Ctrl+Enter simultaneously
-        Sleep(1700)          ; Adjust this delay as needed
-        Send("{DOWN}")      ; Press Down Arrow
-        Sleep(1700)          ; Adjust this delay as needed
-		Send("^{ENTER}")    ; Sends Ctrl+Enter simultaneously
-        Sleep(1700)          ; Adjust this delay as needed
-    WEnd
-EndFunc
-
-; Keep script running
-While 1
-    Sleep(1700)
-WEnd
+Toggle On/Off: "*" key.
