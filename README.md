@@ -1,0 +1,1 @@
+# AutoIT-Script-to-Approve-Repeating-Segments
